@@ -8,6 +8,7 @@ const Products = () => {
     const [itemsPerPage, setItemsPerPAge]= useState(10);
     const numberOfPages =  Math.ceil(count / itemsPerPage);
     const [products, setProducts]=useState([]);
+    const [searchTerm, setSearchTerm]= useState('')
 
     const handleItemsPerPage = e =>{
         console.log(e.target.value);
@@ -31,14 +32,21 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}`)
         .then(res =>res.json())
         .then(data =>setProducts(data))
-    },[currentPage,itemsPerPage])
+    },[currentPage,itemsPerPage, searchTerm])
     
 
     return (
         <div>
+              <input
+                    className='border-5'
+                    type="text"
+                    placeholder="Search by Products name"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
             <h2>Products:{count}</h2>
             <div className='grid grid-cols-1 md:grid-cols-3'>
             {
