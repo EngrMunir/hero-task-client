@@ -2,15 +2,13 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
-import useAxiosPublic from "../../hook/useAxiosPublic";
 import Swal from "sweetalert2";
-import useAxiosSecure from "../../hook/useAxiosSecure";
+import useAxiosPublic from "../../hook/useAxiosSecure";
 
 const Register = () => {
     const { register, handleSubmit, formState:{errors}, reset } = useForm()
     const { createUser, updateUserProfile } = useContext(AuthContext);
     const axiosPublic = useAxiosPublic();
-    const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
 
     const image_hosting_key= import.meta.env.VITE_IMAGE_HOSTING_KEY;
@@ -19,7 +17,7 @@ const Register = () => {
 
     const onSubmit = async(data) =>{
         const imageFile = { image: data.photo[0] }
-        const res = await axiosSecure.post(image_hosting_api, imageFile, {
+        const res = await axiosPublic.post(image_hosting_api, imageFile, {
             headers:{
                 'content-type':'multipart/form-data'
             }
@@ -29,18 +27,16 @@ const Register = () => {
             const email = data.email;
             const password = data.password;
             const image = res.data.data.display_url;
-            const phoneNumber = data.mobile;
 
         createUser(email, password)
         .then(res =>{
             
-            updateUserProfile(data.name, image, phoneNumber)
+            updateUserProfile(data.name, image)
             .then(()=>{
                 const userInfo = {
                     name: data.name,
                     email: data.email,
                     role:'user',
-                    phoneNumber:phoneNumber,
                     image:image
                 }
 
@@ -79,11 +75,6 @@ const Register = () => {
                     <input {...register('photo',{required:true})} type="file" className="file-input w-full max-w-xs mb-3" />
                     {
                         errors.photo && <span className="text-red-500">Name is required</span>
-                    }
-                    <br />
-                    <input type="text" {...register('mobile',{required: true})} placeholder="Mobile Number" className="border w-full mb-4 py-2 px-4"/>
-                    {
-                        errors.mobile && <span className="text-red-500">Mobile Number is required</span>
                     }
                     <br />
                     <input type="email" {...register('email', {required: true})} placeholder="Email" className="border w-full mb-4 py-2 px-4"/>
