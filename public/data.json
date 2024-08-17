@@ -1,0 +1,363 @@
+[
+    {
+      "productName": "Wireless Headphones",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "High-quality wireless headphones with noise-cancellation.",
+      "price": 89.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "createdAt": "2024-08-15T10:45:32Z"
+    },
+    {
+      "productName": "Smartphone Case",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Durable and stylish smartphone case with shock protection.",
+      "price": 19.99,
+      "category": "Accessories",
+      "ratings": 4.0,
+      "createdAt": "2024-08-14T09:12:18Z"
+    },
+    {
+      "productName": "Running Shoes",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Lightweight running shoes designed for comfort and performance.",
+      "price": 59.99,
+      "category": "Footwear",
+      "ratings": 4.7,
+      "createdAt": "2024-08-13T14:33:45Z"
+    },
+    {
+      "productName": "Digital Camera",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Compact digital camera with 20MP resolution and 5x optical zoom.",
+      "price": 299.99,
+      "category": "Electronics",
+      "ratings": 4.3,
+      "createdAt": "2024-08-12T16:22:50Z"
+    },
+    {
+      "productName": "Gaming Chair",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Ergonomic gaming chair with adjustable lumbar support.",
+      "price": 149.99,
+      "category": "Furniture",
+      "ratings": 4.8,
+      "createdAt": "2024-08-11T11:11:25Z"
+    },
+    {
+      "productName": "Bluetooth Speaker",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Portable Bluetooth speaker with 12 hours of playtime.",
+      "price": 39.99,
+      "category": "Electronics",
+      "ratings": 4.6,
+      "createdAt": "2024-08-10T08:47:34Z"
+    },
+    {
+      "productName": "Leather Wallet",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Premium leather wallet with multiple card slots.",
+      "price": 29.99,
+      "category": "Accessories",
+      "ratings": 4.4,
+      "createdAt": "2024-08-09T13:53:12Z"
+    },
+    {
+      "productName": "Smartwatch",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Stylish smartwatch with heart rate monitor and GPS.",
+      "price": 199.99,
+      "category": "Wearable",
+      "ratings": 4.5,
+      "createdAt": "2024-08-08T15:28:40Z"
+    },
+    {
+      "productName": "Coffee Maker",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Automatic coffee maker with programmable settings.",
+      "price": 69.99,
+      "category": "Appliances",
+      "ratings": 4.2,
+      "createdAt": "2024-08-07T10:14:03Z"
+    },
+    {
+      "productName": "Backpack",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Water-resistant backpack with multiple compartments.",
+      "price": 49.99,
+      "category": "Accessories",
+      "ratings": 4.6,
+      "createdAt": "2024-08-06T17:37:29Z"
+    },
+    {
+      "productName": "4K TV",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Ultra HD 4K TV with HDR and smart features.",
+      "price": 799.99,
+      "category": "Electronics",
+      "ratings": 4.7,
+      "createdAt": "2024-08-05T12:08:56Z"
+    },
+    {
+      "productName": "Yoga Mat",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Eco-friendly yoga mat with non-slip surface.",
+      "price": 24.99,
+      "category": "Fitness",
+      "ratings": 4.3,
+      "createdAt": "2024-08-04T09:42:18Z"
+    },
+    {
+      "productName": "Laptop Stand",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Adjustable laptop stand with cooling vents.",
+      "price": 34.99,
+      "category": "Accessories",
+      "ratings": 4.5,
+      "createdAt": "2024-08-03T14:59:41Z"
+    },
+    {
+      "productName": "Electric Kettle",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Fast-boiling electric kettle with auto shut-off.",
+      "price": 39.99,
+      "category": "Appliances",
+      "ratings": 4.4,
+      "createdAt": "2024-08-02T18:20:10Z"
+    },
+    {
+      "productName": "Fitness Tracker",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Waterproof fitness tracker with step counter and sleep monitor.",
+      "price": 59.99,
+      "category": "Wearable",
+      "ratings": 4.2,
+      "createdAt": "2024-08-01T07:11:47Z"
+    },
+    {
+      "productName": "Desk Lamp",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "LED desk lamp with adjustable brightness.",
+      "price": 22.99,
+      "category": "Furniture",
+      "ratings": 4.6,
+      "createdAt": "2024-07-31T11:04:29Z"
+    },
+    {
+      "productName": "Tablet",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "High-performance tablet with 10-inch display.",
+      "price": 249.99,
+      "category": "Electronics",
+      "ratings": 4.7,
+      "createdAt": "2024-07-30T09:53:21Z"
+    },
+    {
+      "productName": "Bluetooth Earbuds",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "True wireless earbuds with touch control and charging case.",
+      "price": 79.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "createdAt": "2024-07-29T16:19:34Z"
+    },
+    {
+      "productName": "Camping Tent",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Waterproof camping tent for 4 people.",
+      "price": 99.99,
+      "category": "Outdoor",
+      "ratings": 4.4,
+      "createdAt": "2024-07-28T13:22:43Z"
+    },
+    {
+      "productName": "Electric Scooter",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Foldable electric scooter with a top speed of 15 mph.",
+      "price": 299.99,
+      "category": "Transport",
+      "ratings": 4.6,
+      "createdAt": "2024-07-27T08:34:56Z"
+    },
+    {
+      "productName": "Portable Power Bank",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Compact 10000mAh power bank with fast charging capabilities.",
+      "price": 34.99,
+      "category": "Electronics",
+      "ratings": 4.6,
+      "createdAt": "2024-07-26T14:11:23Z"
+    },
+    {
+      "productName": "Wireless Mouse",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Ergonomic wireless mouse with adjustable DPI settings.",
+      "price": 19.99,
+      "category": "Accessories",
+      "ratings": 4.4,
+      "createdAt": "2024-07-25T10:23:45Z"
+    },
+    {
+      "productName": "Stainless Steel Water Bottle",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Insulated stainless steel water bottle keeps drinks cold for 24 hours.",
+      "price": 25.99,
+      "category": "Outdoor",
+      "ratings": 4.7,
+      "createdAt": "2024-07-24T09:57:12Z"
+    },
+    {
+      "productName": "Digital Alarm Clock",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "LED digital alarm clock with dual alarms and snooze function.",
+      "price": 29.99,
+      "category": "Home",
+      "ratings": 4.2,
+      "createdAt": "2024-07-23T13:18:07Z"
+    },
+    {
+      "productName": "Electric Toothbrush",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+      "price": 49.99,
+      "category": "Personal Care",
+      "ratings": 4.5,
+      "createdAt": "2024-07-22T16:42:34Z"
+    },
+    {
+      "productName": "Action Camera",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Waterproof action camera with 4K video recording and Wi-Fi.",
+      "price": 119.99,
+      "category": "Electronics",
+      "ratings": 4.3,
+      "createdAt": "2024-07-21T11:15:22Z"
+    },
+    {
+      "productName": "Leather Jacket",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Stylish leather jacket with a slim fit design.",
+      "price": 149.99,
+      "category": "Apparel",
+      "ratings": 4.8,
+      "createdAt": "2024-07-20T15:09:53Z"
+    },
+    {
+      "productName": "Noise-Cancelling Earplugs",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Reusable earplugs with advanced noise-cancelling technology.",
+      "price": 15.99,
+      "category": "Personal Care",
+      "ratings": 4.1,
+      "createdAt": "2024-07-19T09:43:29Z"
+    },
+    {
+      "productName": "Yoga Block",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "High-density foam yoga block for stability and balance.",
+      "price": 12.99,
+      "category": "Fitness",
+      "ratings": 4.6,
+      "createdAt": "2024-07-18T08:32:14Z"
+    },
+    {
+      "productName": "Wireless Charger",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Fast wireless charger compatible with all Qi-enabled devices.",
+      "price": 29.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "createdAt": "2024-07-17T12:25:07Z"
+    },
+    {
+      "productName": "Electric Griddle",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Non-stick electric griddle with adjustable temperature control.",
+      "price": 59.99,
+      "category": "Appliances",
+      "ratings": 4.4,
+      "createdAt": "2024-07-16T14:51:36Z"
+    },
+    {
+      "productName": "Travel Pillow",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Memory foam travel pillow with ergonomic design for neck support.",
+      "price": 22.99,
+      "category": "Travel",
+      "ratings": 4.2,
+      "createdAt": "2024-07-15T11:03:18Z"
+    },
+    {
+      "productName": "Digital Meat Thermometer",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Instant-read digital meat thermometer with backlit display.",
+      "price": 19.99,
+      "category": "Kitchen",
+      "ratings": 4.6,
+      "createdAt": "2024-07-14T10:27:09Z"
+    },
+    {
+      "productName": "Resistance Bands",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Set of 5 resistance bands for home workouts.",
+      "price": 14.99,
+      "category": "Fitness",
+      "ratings": 4.7,
+      "createdAt": "2024-07-13T13:39:46Z"
+    },
+    {
+      "productName": "Bluetooth Keyboard",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Slim Bluetooth keyboard compatible with multiple devices.",
+      "price": 39.99,
+      "category": "Accessories",
+      "ratings": 4.4,
+      "createdAt": "2024-07-12T15:08:33Z"
+    },
+    {
+      "productName": "Electric Pressure Cooker",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Multi-function electric pressure cooker with 10 preset programs.",
+      "price": 89.99,
+      "category": "Appliances",
+      "ratings": 4.5,
+      "createdAt": "2024-07-11T17:12:45Z"
+    },
+    {
+      "productName": "Smart Light Bulb",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Wi-Fi enabled smart light bulb with voice control.",
+      "price": 24.99,
+      "category": "Home",
+      "ratings": 4.6,
+      "createdAt": "2024-07-10T16:39:21Z"
+    },
+    {
+      "productName": "Noise-Cancelling Headphones",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Over-ear noise-cancelling headphones with deep bass.",
+      "price": 199.99,
+      "category": "Electronics",
+      "ratings": 4.7,
+      "createdAt": "2024-07-09T08:51:36Z"
+    },
+    {
+      "productName": "Air Fryer",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "Healthier cooking with this easy-to-use air fryer.",
+      "price": 99.99,
+      "category": "Appliances",
+      "ratings": 4.8,
+      "createdAt": "2024-07-08T14:45:10Z"
+    },
+    {
+      "productName": "Wireless Security Camera",
+      "productImage": "https://i.ibb.co/Jry12NN/download.jpg",
+      "description": "1080p wireless security camera with night vision and motion detection.",
+      "price": 79.99,
+      "category": "Home",
+      "ratings": 4.5,
+      "createdAt": "2024-07-07T12:26:44Z"
+    }
+  ]
+  
