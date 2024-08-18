@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProviders";
 import Swal from "sweetalert2";
-import useAxiosPublic from "../../hook/useAxiosSecure";
+import useAxiosPublic from "../../hook/useAxiosPublic";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
     const { register, handleSubmit, formState:{errors}, reset } = useForm()
@@ -30,7 +30,6 @@ const Register = () => {
 
         createUser(email, password)
         .then(res =>{
-            
             updateUserProfile(data.name, image)
             .then(()=>{
                 const userInfo = {

@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProviders";
 import { useContext } from "react";
+import SocialLogin from "../../Components/SocialLogin/SocialLogin";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
-    const { register, handleSubmit, formState:{errors} } = useForm()
-    const { login } = useContext(AuthContext);
+    const { register, handleSubmit } = useForm()
+    const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -15,7 +16,7 @@ const Login = () => {
         const email = data.email;
         const password = data.password;
 
-        login(email, password)
+        signIn(email, password)
         .then( result =>{
             console.log(result)
             navigate(from, {replace: true});
@@ -31,6 +32,9 @@ const Login = () => {
                 <input type="password" {...register('password')} placeholder="Password" className="border w-full mb-4 py-2 px-4"/>
                  <input className="btn btn-secondary w-full mb-4" type="submit" value="Login" />
             </form>
+            <div className="flex gap-3 justify-center mb-5">
+                <SocialLogin></SocialLogin>
+            </div>
             <p className="text-center mb-5">New here? Please <Link className="text-blue-500" to="/register">Register</Link></p>
         </div>
     </div>
