@@ -1,4 +1,4 @@
-# Scholar master
+# MarketMingle
 ## Overview:
 This is a product displaying full stack project for utilizing search, filtering, pagination, categorization. 
 
