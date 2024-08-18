@@ -10,6 +10,12 @@ const Products = () => {
     const [products, setProducts]=useState([]);
     const [searchTerm, setSearchTerm]= useState('')
     const [sortOption, setSortOption] = useState('date-desc');
+    const [brand, setBrand] = useState('');
+    const [category, setCategory] = useState('');
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(10000);
+    const [loading, setLoading]=useState(true);
+
 
     const handleItemsPerPage = e =>{
         console.log(e.target.value);
@@ -33,12 +39,17 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
         .then(res =>res.json())
-        .then(data =>setProducts(data))
-    },[currentPage,itemsPerPage, searchTerm, sortOption])
+        .then(data =>{
+            setProducts(data)
+            setLoading(false)
+        })
+    },[currentPage,itemsPerPage, searchTerm, sortOption,brand,category,minPrice,maxPrice])
     
-
+    if(loading){
+        return <p>Loading.......</p>
+    }
     return (
         <div>
               <input
@@ -48,6 +59,30 @@ const Products = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
+                 <input
+                type="text"
+                placeholder="Brand Name"
+                value={brand}
+                onChange={(e) => setBrand(e.target.value)}
+            />
+            <input
+                type="text"
+                placeholder="Category Name"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+            />
+            <input
+                type="number"
+                placeholder="Min Price"
+                value={minPrice}
+                onChange={(e) => setMinPrice(parseFloat(e.target.value))}
+            />
+             <input
+                type="number"
+                placeholder="Max Price"
+                value={maxPrice}
+                onChange={(e) => setMaxPrice(parseFloat(e.target.value))}
+            />
                 <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
                     <option value="price-asc">Price: Low to High</option>
                     <option value="price-desc">Price: High to Low</option>
