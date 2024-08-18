@@ -9,6 +9,7 @@ const Products = () => {
     const numberOfPages =  Math.ceil(count / itemsPerPage);
     const [products, setProducts]=useState([]);
     const [searchTerm, setSearchTerm]= useState('')
+    const [sortOption, setSortOption] = useState('date-desc');
 
     const handleItemsPerPage = e =>{
         console.log(e.target.value);
@@ -32,10 +33,10 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}`)
         .then(res =>res.json())
         .then(data =>setProducts(data))
-    },[currentPage,itemsPerPage, searchTerm])
+    },[currentPage,itemsPerPage, searchTerm, sortOption])
     
 
     return (
@@ -47,6 +48,12 @@ const Products = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
+                <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="date-desc">Date Added: Newest first</option>
+                    <option value="date-asc">Date Added: Oldest first</option>
+                </select>
             <h2>Products:{count}</h2>
             <div className='grid grid-cols-1 md:grid-cols-3'>
             {
