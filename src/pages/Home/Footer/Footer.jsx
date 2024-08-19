@@ -16,7 +16,7 @@ const Footer = () => {
     <p className="font-bold">
       MarketMingle Ltd.
       <br />
-      Providing reliable tech since 1992
+      Providing reliable tech since 2024
     </p>
     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>

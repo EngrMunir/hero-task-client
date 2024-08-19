@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
             {
                 path:'/product',
                 element:<Products></Products>,
-                loader:()=>fetch('https://hero-task-server.vercel.app/productCount')
+                loader:()=>fetch('http://localhost:5000/productCount')
             }
         ]
     }

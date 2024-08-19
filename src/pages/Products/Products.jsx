@@ -40,7 +40,7 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(() => {
-        fetch(`https://hero-task-server.vercel.app/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
+        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -101,7 +101,7 @@ const Products = () => {
                 <option value="date-asc">Date Added: Oldest first</option>
             </select>
             <h2>Products: {count}</h2>
-            <div className='grid grid-cols-1 md:grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {products.map((product) => <ProductCard key={product._id} product={product}></ProductCard>)}
             </div>
             <div className='pagination'>
