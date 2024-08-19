@@ -40,7 +40,7 @@ const Products = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
+        fetch(`https://hero-task-server.vercel.app/products?page=${currentPage}&size=${itemsPerPage}&search=${searchTerm}&sort=${sortOption}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
